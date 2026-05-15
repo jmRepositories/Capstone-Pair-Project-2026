@@ -1,96 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Explorer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="container">
-
-    <!-- Header -->
-    <header>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
         <div class="logo">Italian Pizza</div>
 
-        <input type="text" placeholder="Search recipes..." class="search-bar">
+        <input type="text" id="nameSearch" placeholder="Search recipe name" />
 
         <div class="nav-buttons">
-            <button class="btn">Sign Up</button>
-            <button class="btn login">Login</button>
+          <button class="btn">Sign Up</button>
+          <button class="btn login">Login</button>
         </div>
-    </header>
+      </header>
 
-    <!-- Hero -->
-    <section class="hero">
+      <!-- Hero -->
+      <section class="hero">
         <h1>Explore Recipes</h1>
-    </section>
+      </section>
 
-    <!-- Filters -->
-    <section class="filters">
+      <!-- Filters -->
+      <section class="filters">
         <button class="filter active" data-category="all">All</button>
         <button class="filter" data-category="starter">Starters</button>
         <button class="filter" data-category="main">Main Courses</button>
         <button class="filter" data-category="dessert">Desserts</button>
-    </section>
+      </section>
 
-    <div class="content">
-
+      <div class="content">
         <!-- Recipe Grid -->
         <main class="recipes">
+          <!-- <div class="card" data-category="starter">
+            <img src="images/fresh-salad.jpg" />
+            <h3>Fresh Salad</h3>
+            <p>Healthy starter recipe</p>
+          </div>
 
-            <div class="card" data-category="starter">
-                <img src="images/fresh-salad.jpg">
-                <h3>Fresh Salad</h3>
-                <p>Healthy starter recipe</p>
-            </div>
+          <div class="card" data-category="main">
+            <img src="images/salad.jpg" />
+            <h3>Pasta Bowl</h3>
+            <p>Italian creamy pasta</p>
+          </div>
 
-            <div class="card" data-category="main">
-                <img src="images/salad.jpg">
-                <h3>Pasta Bowl</h3>
-                <p>Italian creamy pasta</p>
-            </div>
+          <div class="card" data-category="dessert">
+            <img src="images/sprinkles-donut.jpg" />
+            <h3>Sprinkle Donuts</h3>
+            <p>Rich dessert</p>
+          </div>
 
-            <div class="card" data-category="dessert">
-                <img src="images/sprinkles-donut.jpg">
-                <h3>Sprinkle Donuts</h3>
-                <p>Rich dessert</p>
-            </div>
-
-            <div class="card" data-category="main">
-                <img src="images/pizza-delight.jpg">
-                <h3>Pizza Delight</h3>
-                <p>Cheesy classic pizza</p>
-            </div>
-
+          <div class="card" data-category="main">
+            <img src="images/pizza-delight.jpg" />
+            <h3>Pizza Delight</h3>
+            <p>Cheesy classic pizza</p>
+          </div> -->
         </main>
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="box">
-                <h3>Most Followed</h3>
-                <ul>
-                    <li>Madalena</li>
-                    <li>Suzi Perry</li>
-                    <li>Ally</li>
-                    <li>Matteo</li>
-                </ul>
-            </div>
+          <label for="caloriesSearch">Max Calories:</label><br />
+          <input
+            type="number"
+            id="caloriesSearch"
+            placeholder="Max calories"
+          /><br /><br />
+          <label for="cuisine">Cuisine:</label><br />
+          <select id="cuisine">
+            <option value="">All Cuisines</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Indian">Indian</option>
+            <option value="French">French</option></select
+          ><br />
+          <!-- <div class="box">
+            <h3>Most Followed</h3>
+            <ul>
+              <li>Madalena</li>
+              <li>Suzi Perry</li>
+              <li>Ally</li>
+              <li>Matteo</li>
+            </ul>
+          </div>
 
-            <div class="box">
-                <h3>I’d like to cook...</h3>
-                <ul>
-                    <li>Vegetarian</li>
-                    <li>Dessert</li>
-                    <li>Pasta</li>
-                </ul>
-            </div>
+          <div class="box">
+            <h3>I’d like to cook...</h3>
+            <ul>
+              <li>Vegetarian</li>
+              <li>Dessert</li>
+              <li>Pasta</li>
+            </ul>
+          </div> -->
         </aside>
-
+      </div>
     </div>
-</div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
