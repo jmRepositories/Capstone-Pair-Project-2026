@@ -395,3 +395,13 @@ cuisineInput.addEventListener("change", filterRecipes);
 
 // Initial render
 renderRecipes(recipies);
+
+const createPageDiv = document.querySelector(".createPage");
+
+function createPage() {
+  if (createPageDiv.style.display === "none") {
+    createPageDiv.style.display = "block";
+  } else {
+    createPageDiv.style.display = "none";
+  }
+}
