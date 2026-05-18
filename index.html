@@ -15,7 +15,7 @@
         <input type="text" id="nameSearch" placeholder="Search recipe name" />
 
         <div class="nav-buttons">
-          <button class="btn create" onclick="createPage()">
+          <button class="btn create">
             Make/Add Recipe
           </button>
         </div>
@@ -101,8 +101,81 @@
       </div>
     </div>
     <div class="createPage">
-      <h2>Create a Card</h2>
-    </div>
+
+        <h2>Create Recipe</h2>
+      
+        <form id="recipeForm">
+      
+          <input type="text" id="recipeName" placeholder="Recipe Name" required>
+      
+          <select id="recipeCategory" required>
+            <option value="">Select Category</option>
+            <option value="starter">Starter</option>
+            <option value="main">Main Course</option>
+            <option value="dessert">Dessert</option>
+          </select>
+      
+          <select id="recipeCuisine" required>
+            <option value="">Select Cuisine</option>
+            <option value="Italian">Italian</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Indian">Indian</option>
+            <option value="French">French</option>
+          </select>
+      
+          <input
+            type="text"
+            id="recipeCookTime"
+            placeholder="Cook Time"
+            required
+          >
+      
+          <input
+            type="number"
+            id="recipeCalories"
+            placeholder="Calories"
+            required
+          >
+      
+          <input
+            type="text"
+            id="recipeImage"
+            placeholder="Image Path (images/example.jpg)"
+            required
+          >
+      
+          <textarea
+            id="recipeDescription"
+            placeholder="Recipe Description"
+            rows="4"
+            required
+          ></textarea>
+      
+          <textarea
+            id="recipeSteps"
+            placeholder="Enter steps separated by commas"
+            rows="5"
+            required
+          ></textarea>
+      
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">
+              Create Recipe
+            </button>
+      
+            <button
+              type="button"
+              class="cancel-btn"
+              onclick="createPage()"
+            >
+              Cancel
+            </button>
+          </div>
+      
+        </form>
+      
+      </div>
     <script src="script.js"></script>
   </body>
 </html>
